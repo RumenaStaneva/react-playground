@@ -1,0 +1,44 @@
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.card {
+    border: 1px solid burlywood;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    border-bottom: 1px solid burlywood;
+    padding: 10px;
+    margin: 0;
+}
+
+.card p {
+    border-bottom: 1px solid burlywood;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.card img {
+    padding: 10px;
+    min-width: 225px;
+    height: 225px;
+}
+
+@media screen and (max-width: 576px) {
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        margin-right: 0 !important;
+    }
+}
